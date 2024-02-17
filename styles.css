@@ -42,7 +42,7 @@ h1 {
 }
 
 .center2 {
-  margin: 3.5rem 0 0;
+  margin: 1rem 0 0;
   color: white;
   width: 100%;
   /* padding: 10rem 0 0; */
@@ -85,8 +85,8 @@ h1 {
 .center6 {
   margin: auto;
   color: white;
-  width: 25rem;
-  padding: 4rem 0 0;
+  width: 23rem;
+  padding: 0.8rem 0 0;
   text-align: center;
   /* background-color: #212428; */
   /* display: inline-block; */
@@ -96,7 +96,7 @@ h1 {
   margin: auto;
   color: white;
   width: 100%;
-  padding: 1rem;
+  padding: 0.8rem;
   /* height: 200px; */
   text-align: center;
   background-color: #212428;
@@ -113,8 +113,11 @@ h1 {
 .middle2 {
   text-align: center;
   color: white;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
+  display: flexbox;
   /* margin: 50%; */
+  /* margin-left: 17.7rem ; */
+  align-items: center;
 }
 
 .swap {
