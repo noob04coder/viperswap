@@ -14,6 +14,7 @@
   <script src="https://unpkg.com/react@18.2/umd/react.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18.2/umd/react-dom.production.min.js" crossorigin></script>
   <script type="module" src="https://unpkg.com/@dexhunterio/swaps@0.0.86/lib/umd/swaps.umd.js"></script>
+  <script src='https://terminal.jup.ag/main-v2.js'></script>
   <script src="https://kit.fontawesome.com/db08922239.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="stylesheet" href="styles.css">
@@ -91,35 +92,27 @@
         </span>
       </div>
   </nav> -->
-  <div class="center5" id="coinmarketcap-widget-marquee" coins="17430,12787,2010,25264,16755,13769,18774,26880,27463,17160,22989,23047,23115,21639" currency="USD" theme="dark" transparent="true" show-symbol-logo="true"></div>
-  <!-- <a class="home" href="index.html"><i class="fa-solid fa-house"></i></a> -->
-  <script type="text/javascript" src="test.js" defer></script>
+  <script type="text/javascript" src="./test.js"></script><div class="center5" id="coinmarketcap-widget-marquee" coins="5426,11461,29210,23095,28177,28541" currency="USD" theme="dark" transparent="false" show-symbol-logo="true"></div>
   <!-- <script>window.addEventListener('load', function () {
     setTimeout(function(){
     marqDur=parseFloat(document.getElementsByClassName("coin-marquee-container__inner")[0].style.animationDuration)*2.5;
 document.getElementsByClassName("coin-marquee-container__inner")[0].style.animationDuration=(marqDur+"s");
 },1000)
   })</script> -->
-      <!-- <h1 class="swap2">ViperSwap</h1> -->
-  <div class="center2" id="dexhunter-root"></div>
-  <script type="module">
-    ReactDOM.render(
-        React.createElement(
-            dexhunterSwap, 
-            {"orderTypes":["SWAP","LIMIT","DCA"],"defaultToken":"caff93803e51c7b97bf79146790bfa3feb0d0b856ef16113b391b9975649504552","colors":{"background":"#212428","containers":"#212428","subText":"#88919E","mainText":"#FFFFFF","buttonText":"#FFFFFF","accent":"#B1232F"},"theme":"dark","width":370,"partnerCode":"vipercoin616464723171396b6e64653372327776686b38666a616a63686c66756835326b326a6332646636356d39796d6e787634763835666b796d7a3338346c7330727778777a783734786834786335616466726d6870396c72356d377038677a6d6c6a71307333306e65da39a3ee5e6b4b0d3255bfef95601890afd80709","partnerName":"ViperCoin"}
-        ),
-        document.getElementById('dexhunter-root')
-    );
-</script>
+<!-- Attach the loading script in your <head /> -->
+<!-- Prepare a div in your <body> for Terminal to render -->
+<div class="center6">
+<div class="center7" id="integrated-terminal"></div>
+</div>  
 
 <div class="middle2">
-  <button class="btn btn-danger swap-btn2" onclick="window.location.href='./jup.html'">
-    <img class="social2" src="swap.svg" alt="SwapImg">      
-    <span>SWITCH TO JUPITER</span>
-  </button>
-
-</div>
-  <!-- <div class="middle">
+    <button class="btn btn-danger swap-btn2" onclick="window.location.href='./swap.html'">
+      <img class="social2" src="swap.svg" alt="SwapImg">      
+      <span>SWITCH TO DEX-HUNTER</span>
+    </button>
+  
+  </div>
+<!-- <div class="middle">
     <span>
       <a class="" href="https://vipercoin.io/">
         <img class="social3" src="website.png" alt="Website">
@@ -159,6 +152,11 @@ document.getElementsByClassName("coin-marquee-container__inner")[0].style.animat
       <!-- <span><img src="favicon.png" alt="Logo" width="60" height="60" class=""></span> -->
       <p>© 2024 VIPER All Rights Reserved</p>
     </div>
+    <script>window.Jupiter.init({
+        displayMode: "integrated",
+        integratedTargetId: "integrated-terminal",
+        endpoint: "https://mainnet.helius-rpc.com/?api-key=611959da-f8f0-41d1-a13c-5cb1400c3ab2",
+      });</script>
     <!-- <script>
     document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("swap-main").style.border = "solid white";
@@ -170,6 +168,23 @@ document.getElementsByClassName("coin-marquee-container__inner")[0].style.animat
     background-color: #212428;
     font-family: 'Prompt', sans-serif;
   }
+  .py-5 {
+    padding-top: 1.5rem!important;
+    padding-bottom: 1.5rem!important;
+}
+.p-5{
+    padding: 1.5rem!important;
+}
+#jupiter-terminal .bg-\[\#191B1F\] {
+    background-color: #b1232f;
+}
+#jupiter-terminal .bg-\[\#212128\]{
+    background-color: #212428;
+    border: rgb(61, 61, 61) solid 2px;
+}
+#jupiter-terminal .text-white\/30 {
+    color: hsl(0, 0%, 100%);
+}
   </style>
 </body>
 
